@@ -1,4 +1,4 @@
-This data repository belongs to the publication [**"Herbivore-induced branching increases sapling survival in temperate forest canopy gaps"**]() by Churski et al. Journal of Ecology (2022).
+This data repository belongs to the publication [**"Herbivore-induced branching increases sapling survival in temperate forest canopy gaps"**](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.13880) by Churski et al. Journal of Ecology (2022).
 
 #### Summary
 
@@ -23,3 +23,25 @@ Table **'survival_data.csv'** contains data on survived (1) and dead (0) indivdi
 	'Survived_2018': binary (0,1) variable describing alive(1) and dead (0) individual saplings as inventoried in year 2018 (10 years after the experiment);
 	'RBDI': Relative Branching Density Index'
 
+Table **'RBDI_data.csv'** contains data on the Relative Branching Density Index (RBDI) and the initial (measured during planting in 2008) Branching Density Index (BDI) for all the planted saplings. 
+
+	Column headers description:
+
+	'Site' : index for subsequent site (levels 1-6);
+	'Herbivory': factor describing herbivore treatment with two levels - Control (herbivores present) and Exclosure (herbivores excluded);
+	'Light': factor describing light treatment with two levels - Dark (Low Light) and Light (High Light);  
+	'Species': factor describing species of the planted trees with 5 levels (Acer, Carpinus, Quercus, Picea, Tilia)
+	'BDI_2008': Branching Density Index;
+	'RBDI': Relative Branching Density Index (RBDI).
+
+Table **'BI_data.csv'** contains data on browsing intensity per sapling. We only used the data from the control plots, where browsing occurred, and combined high-light and low-light plots. 
+
+	Column headers description:
+
+	'Site' : index for subsequent site (levels 1-6);
+	'Herbivory': factor describing herbivore treatment with two levels - Control (herbivores present) and Exclosure (herbivores excluded);
+	'Light': factor describing light treatment with two levels - Dark (Low Light) and Light (High Light);  
+	'Species': factor describing species of the planted trees with 5 levels (Acer, Carpinus, Quercus, Picea, Tilia)
+	'BI': browsing intensity - proportion of browsed to all counted branches per individual sapling;
+	'BI_cat': browsing intensity categorized into three levels: Low − 1st quartile, Medium − 2nd and 3rd quartiles, and High – 4th quartile;
+	'RBDI': Relative Branching Density Index (RBDI).
